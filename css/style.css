@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Bakbak+One&family=Corinthia:wght@400;700&family=Smooch&display=swap');
+
+:root{
+    --blue: rgba(68, 222, 201, 0.61);
+}
+
+html{
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 65%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0; margin: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none; outline: none;
+    transition: .3s linear;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgb(86, 43, 12, .5);
+    padding: 0 5rem;
+}
+
+.logo img{
+    height: 15rem;
+}
+
+.navigation a{
+    color: rgb(217, 165, 32);
+    margin-right: 2rem;
+    font-size: 3rem;
+}
+
+.navigation a:hover{
+    color: rgb(86, 43, 12);
+}
+
+#menu{
+    font-size: 3rem;
+    color: rgb(217, 165, 32);
+    border: 2px solid rgb(86, 43, 12, .5);
+    padding: 2rem 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+@media(max-width: 900px){
+
+    html{
+        font-size: 60%;
+    }
+}
+
+@media(max-width: 780px){
+    html{
+        font-size: 50%;
+    }
+
+    header{
+        padding: 0;
+    }
+
+    #menu{
+        display: initial;
+        margin-right: 2rem;
+    }
+
+    .navigation{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .navigation.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .navigation a{
+        display: block;
+        background-color: rgb(86, 43, 12);
+        border-bottom: 1px solid rgb(217, 165, 32);
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .navigation a:hover{
+        background-color: rgb(217, 165, 32);
+        border-left: 20px solid rgba(86, 43, 12, 0.5)
+    }
+}
