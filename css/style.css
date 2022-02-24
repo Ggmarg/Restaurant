@@ -49,14 +49,65 @@ header{
 #menu{
     font-size: 3rem;
     color: rgb(217, 165, 32);
-    border: 2px solid rgb(86, 43, 12, .5);
+    border: 2px solid rgba(86, 43, 12, .5);
     padding: 2rem 2rem;
     cursor: pointer;
     display: none;
 }
 
+.home{
+    background-color: rgba(217, 165, 32,.1);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 
+.home .content h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    color: rgb(86, 43, 12);
+}
 
+.home .content p{
+    font-size: 3.5rem;
+    color: rgb(110, 51, 9);
+}
+
+.home .content .bt{
+    display: inline-block;
+    border: .2rem solid rgb(217, 165, 32);
+    color: rgb(217, 165, 32);
+    cursor: pointer;
+    font-size: 2.5rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.home .content .bt:before{
+    content: ' ';
+    width: 0;
+    height: 100%;
+    background: rgb(86, 43, 12);
+    position: absolute;
+    top: 0; right: 0;
+    transition: .4s linear;
+    z-index: -1;
+}
+
+.home .content .bt:hover::before{
+    width: 100%;
+    left: 0;
+}
 
 @media(max-width: 900px){
 
