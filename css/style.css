@@ -93,6 +93,19 @@ header{
     position: relative;
 }
 
+.home .content{
+    animation: changeSize 5s linear infinite;
+}
+
+@keyframes changeSize{
+    0%, 100%{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.5);
+    }
+}
+
 .home .content .bt:before{
     content: ' ';
     width: 0;
@@ -113,6 +126,15 @@ header{
 
     html{
         font-size: 60%;
+    }
+
+    @keyframes changeSize{
+        0%, 100%{
+            transform: scale(.7)
+        }
+        50%{
+            transform: scale(1);
+        }
     }
 }
 
