@@ -168,7 +168,7 @@ header{
     transform: translateY(-40%);
 }
 
-.products .container .box img:hover{
+.products .container .box:hover img{
     transform: translateY(-10%);
 }
 
