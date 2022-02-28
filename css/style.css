@@ -18,7 +18,7 @@ html{
     text-decoration: none;
     box-sizing: border-box;
     border: none; outline: none;
-    transition: .3s linear;
+    transition: .2s linear;
 }
 
 header{
@@ -133,21 +133,27 @@ header{
 
 .products .container{
     display: grid;
-    grid-template-columns:repeat(auto-fit, 540px);
+    grid-template-columns:repeat(auto-fit, 580px);
     grid-auto-rows: 1fr;
     gap: 2rem;
     justify-content: center;
 }
 
 .products .container .box{
+    overflow: hidden;
+    padding: 5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1) ;
+}
+
+.products .container .box .product{
     position: relative;
     overflow: hidden;
     cursor: pointer;
 }
 
-.products .container .box img{
-    height: 100%;
+.products .container .box .product img{
     width: 100%;
+    height: 540px;
 }
 
 .products .container .content{
@@ -156,28 +162,50 @@ header{
     left: 0; right: 0;
     top: 100%;
     height: 240px;
+    text-align: center;
+    color: rgb(86, 43, 12);
 }
 
 .products .container h3{
-    font-size: 5rem;
-    color: rgb(86, 43, 12);
-    text-align: center;
+    font-size: 4rem;
 }
 
-.products .container .box:hover .content{
-    transform: translateY(-40%);
+.products .container p{
+    font-size: 3rem;
 }
 
-.products .container .box:hover img{
+.products .container .stars{
+    font-size: 3rem;
+    color: rgba(86, 43, 12, .4);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.products .container .box .product:hover .content{
+    transform: translateY(-30%);
+}
+
+.products .container .box .product:hover img{
     transform: translateY(-10%);
 }
 
 .products .container .box .content:hover{
     background-color: rgb(86, 43, 12);
+    color: rgb(221, 177, 64);
 }
 
-.products .container .box .content:hover h3{
-    color: rgb(221, 177, 64);
+.products .container .stars i:hover{
+    color: gold;
+}
+
+.products .container .stars i:hover ~ i {
+    color: gold;
+}
+
+.products .container .stars i.active ~i{
+    color: gold;
 }
 
 @media(max-width: 900px){
@@ -232,4 +260,5 @@ header{
         background-color: rgb(217, 165, 32);
         border-left: 20px solid rgba(86, 43, 12, 0.5)
     }
+
 }
