@@ -123,6 +123,9 @@ header{
     left: 0;
 }
 
+.products{
+    margin: 3rem;
+}
 
 .products h1{
     font-size: 4rem;
@@ -206,6 +209,23 @@ header{
 
 .products .container .stars i.active ~i{
     color: gold;
+}
+
+.footer{
+    width: 100%;
+    background: rgba(217, 165, 32,.1);
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3.5rem;
+    color: rgb(86, 43, 12);
+}
+
+.footer .social-media i:hover{
+    color: rgb(217, 165, 32);
+    cursor: pointer;
 }
 
 @media(max-width: 900px){
