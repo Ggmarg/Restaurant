@@ -21,6 +21,11 @@ html{
     transition: .2s linear;
 }
 
+*::selection{
+    color: rgb(217, 165, 32);
+    background: rgb(86, 43, 12, .5);
+}
+
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -80,7 +85,7 @@ header{
     color: rgb(110, 51, 9);
 }
 
-.home .content .bt{
+.bt{
     display: inline-block;
     border: .2rem solid rgb(217, 165, 32);
     color: rgb(217, 165, 32);
@@ -107,7 +112,7 @@ header{
     }
 }
 
-.home .content .bt:before{
+.bt:before{
     content: ' ';
     width: 0;
     height: 100%;
@@ -118,7 +123,7 @@ header{
     z-index: -1;
 }
 
-.home .content .bt:hover::before{
+.bt:hover::before{
     width: 100%;
     left: 0;
 }
@@ -209,6 +214,51 @@ header{
 
 .products .container .stars i.active ~i{
     color: gold;
+}
+
+.order{
+    margin: 5rem;
+    background: #fff;
+}
+
+.order h1{
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(217, 165, 32);
+    margin: 1rem;
+}
+
+.order .main-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order .main-info .details{
+    width: 45%;
+}
+
+.order .main-info input{
+    border: 1px solid rgb(86, 43, 12);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 5rem;
+    width: 100%;
+    background: rgba(217, 165, 32,.1);
+    color: rgb(110, 51, 9);
+}
+
+.order .map{
+    width: 45%;
+}
+
+#order-btn{
+    display: flex;
+    justify-content: center;
+}
+
+#order-btn .bt{
+    padding: 2rem 5rem;
 }
 
 .footer{
