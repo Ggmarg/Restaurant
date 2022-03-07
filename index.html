@@ -147,20 +147,29 @@
 
     <section class="order" id="order">
         <h1>order here</h1>
-        <div class="input-content">
+        <form class="input-content">
             <div class="main-info">
                 <div class="details">
-                    <input type="text" placeholder="name">
-                    <input type="email" placeholder="email">
-                    <input type="number" placeholder="phone">
-                    <input type="text" placeholder="product">
-                    <input type="text" placeholder="adress">
+                    <input type="text" placeholder="name" required>
+                    <input type="email" placeholder="email" required>
+                    <input type="tel" placeholder="phone" required>
+                    <input type="text" placeholder="product" required>
+                    <input type="text" placeholder="adress" required>
+                    <select name="product" id="product">
+                        <option value="Strawberry Rhubarb Bars">Strawberry Rhubarb Bars</option>
+                        <option value="Strawberry Tart">Strawberry Tart</option>
+                        <option value="Easy Peach Cobbler">Easy Peach Cobbler</option>
+                        <option value="Strawberry Rhubarb Bars">Peach Crisp</option>
+                        <option value="Strawberry Rhubarb Bars">Grilled Peaches</option>
+                        <option value="Strawberry Rhubarb Bars">Edible Cookie Dough</option>
+                    </select>
                 </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48773.65923612078!2d44.457364999999996!3d40.1789413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abebda62e66a5%3A0x567cdc0e773f75ae!2sRenesans%20restaurant!5e0!3m2!1sen!2s!4v1646316993095!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
-        </div>
-        <div id="order-btn">
-            <a href="" class="bt">Order</a>
-        </div>
+            </div>
+            <div id="order-btn">
+                <button class="bt" type="submit">Order</button>
+            </div>
+        </form>
     </section>
 
 

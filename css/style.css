@@ -15,7 +15,6 @@ html{
 
 *{
     padding: 0; margin: 0;
-    text-transform: capitalize;
     text-decoration: none;
     box-sizing: border-box;
     border: none; outline: none;
@@ -28,6 +27,7 @@ html{
 }
 
 header{
+    text-transform: capitalize;
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 50;
@@ -63,6 +63,7 @@ header{
 }
 
 .home{
+    text-transform: capitalize;
     background-color: rgba(217, 165, 32,.1);
     height: 100vh;
     display: flex;
@@ -130,6 +131,7 @@ header{
 }
 
 .products{
+    text-transform: capitalize;
     margin: 3rem;
 }
 
@@ -218,6 +220,7 @@ header{
 }
 
 .order{
+    text-transform: none;
     margin: 5rem;
     background: #fff;
 }
@@ -240,7 +243,7 @@ header{
     width: 45%;
 }
 
-.order .main-info input{
+.order .main-info input, select{
     border: 1px solid var(--chocolate);
     margin: 2rem;
     padding: 1rem;
@@ -264,6 +267,7 @@ header{
 }
 
 .footer{
+    text-transform: capitalize;
     width: 100%;
     background: rgba(217, 165, 32,.1);
     height: 10vh;
