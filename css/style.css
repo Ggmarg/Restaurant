@@ -26,6 +26,12 @@ html{
     background: rgb(86, 43, 12, .5);
 }
 
+
+
+/* header starts */
+
+
+
 header{
     text-transform: capitalize;
     position: fixed;
@@ -61,6 +67,12 @@ header{
     cursor: pointer;
     display: none;
 }
+
+
+
+/* home section */
+
+
 
 .home{
     text-transform: capitalize;
@@ -129,6 +141,12 @@ header{
     width: 100%;
     left: 0;
 }
+
+
+
+/* products section */
+
+
 
 .products{
     text-transform: capitalize;
@@ -219,6 +237,12 @@ header{
     color: gold;
 }
 
+
+
+/* order section */
+
+
+
 .order{
     text-transform: none;
     margin: 5rem;
@@ -266,7 +290,7 @@ header{
     padding: 2rem 5rem;
 }
 
-.footer{
+footer{
     text-transform: capitalize;
     width: 100%;
     background: rgba(217, 165, 32,.1);
@@ -279,7 +303,7 @@ header{
     color: var(--chocolate);
 }
 
-.footer .social-media i:hover{
+footer .social-media i:hover{
     color: var(--golden);
     cursor: pointer;
 }
