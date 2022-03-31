@@ -306,7 +306,11 @@ footer{
     color: var(--chocolate);
 }
 
-footer .social-media i:hover{
+footer a{
+    color: var(--chocolate);
+}
+
+footer .social-media a:hover{
     color: var(--golden);
     cursor: pointer;
 }
